@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Página do Gustavo</title>
+</head>
+<body>
+    <style>
+        body{
+
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            background: url('/fundo1.jpg') center center no-repeat fixed ;
+            background-position: 30% 10%;
+            background-color: black;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;             
+            }
+
+        html{
+            overflow-x: hidden;
+            }
+
+        h1{
+            color: #111;
+            }
+
+        h2{
+            color: #111;
+            font-size: 80px;
+            }
+
+        video{
+            padding: 25px;
+            }
+
+        .linha{
+            background-color: #111;
+            height: 3px;
+            width: 1400px;
+            margin-top: 20px;
+            }
+            
+        iframe{
+            padding: 20px;
+            }
+        .margem{
+            margin-left: -700px;
+        }
+    </style>
+
+    <!-- MÚSICAS -->
+
+<div class="margem">
+    
+    <h2>Músicas</h2>
+
+    <h1>Carolina - Seu Jorge</h1>
+    <audio id="player" controls="controls">
+        <source src="/Estudos/HTML_Música/Carolina.mp3">
+    </audio>
+    <div>
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume+=0.1()">Aumentar Volume</button>
+        <button onclick="document.getElementById('player').volume-=0.1()">Diminuir Volume</button>
+    </div>
+
+
+    <h1>Lose Yourself - Eminem</h1>
+    <audio id="player1" controls="controls">
+        <source src="/Estudos/HTML_Música/Eminem - Lose Yourself.mp3">
+    </audio>
+    <div>
+        <button onclick="document.getElementById('player1').play()">Play</button>
+        <button onclick="document.getElementById('player1').pause()">Pause</button>
+        <button onclick="document.getElementById('player1').volume+=0.1">Aumentar Volume</button>
+        <button onclick="document.getElementById('player1').volume-=0.1">Diminuir Volume</button>
+    </div>
+
+    <h1>Lonely Playboy - Lil' Peep</h1>
+    <audio id="player2" controls="controls">
+        <source src="/Estudos/HTML_Música/Lonely Playboy - Lil' Peep.mp3">
+    </audio>
+    <div>
+        <button onclick="document.getElementById('player2').play()">Play</button>
+        <button onclick="document.getElementById('player2').pause()">Pause</button>
+        <button onclick="document.getElementById('player2').volume+=0.1()">Aumentar Volume</button>
+        <button onclick="document.getElementById('player2').volume-=0.1()">Diminuir Volume</button>
+    </div>
+
+    <h1>Take Me To Church - Rozier</h1>
+    <audio id="player3" controls="controls">
+        <source src="/Estudos/HTML_Música/Take Me To Church.mp3">
+    </audio> 
+    <div>
+        <button onclick="document.getElementById('player3').play()">Play</button>
+        <button onclick="document.getElementById('player3').pause()">Pause</button>
+        <button onclick="document.getElementById('player3').volume+=0.1()">Aumentar Volume</button>
+        <button onclick="document.getElementById('player3').volume-=0.1()">Diminuir Volume</button>
+    </div>
+
+    <h1>After Dark - Mr.Kitty</h1>
+    <audio id="player4" controls="controls">
+        <source src="/Estudos/HTML_Música/Mr.Kitty - After Dark.mp3">
+    </audio>
+    <div>
+        <button onclick="document.getElementById('player4').play()">Play</button>
+        <button onclick="document.getElementById('player4').pause()">Pause</button>
+        <button onclick="document.getElementById('player4').volume+=0.1()">Aumentar Volume</button>
+        <button onclick="document.getElementById('player4').volume-=0.1()">Diminuir Volume</button>
+    </div>
+
+    <!-- VÍDEOS BAIXADOS -->
+
+    <h2>Vídeos Baixados</h2>
+
+    <div>
+        <h1>System Of A Down - Lonely Day</h1>
+    <video src="/Estudos/HTML_Música/System Of A Down - Lonely Day.mp4" width="320" height="240" controls="controls"></video>
+    </div>
+
+    <div>
+        <h1>KALEO - Way Down We Go</h1>
+    <video src="/Estudos/HTML_Música/KALEO - Way Down We Go.mp4" width="320" height="240" controls="controls"></video>
+    </div>
+
+    <div>
+        <h1>Gangsta's Paradise (feat. L.V.)</h1>
+    <video src="/Estudos/HTML_Música/Gangsta's Paradise (feat. L.V.) [Official Music Video].mp4" width="320" height="240" controls="controls"></video>
+    </div>
+
+    <div>
+        <h1>The Score - Stronger</h1>
+    <video src="/Estudos/HTML_Música/The Score - Stronger.mp4" width="320" height="240" controls="controls"></video>
+    </div>
+
+
+
+    <!-- VÍDEOS DO YOUTUBE -->
+
+    <h2>Vídeos do YouTube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zF5Ddo9JdpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAg3uMlNyHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+</body>
+</html>
